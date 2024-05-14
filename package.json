@@ -8,7 +8,7 @@
         "xlsxTransform": "vt transform data",
         "xlsx2json": "vt transform -s 4 -d public data/**/*.xlsx",
         "dev": "webpack serve --open /view/index.html",
-        "build": "webpack --mode production"
+        "build": "webpack --mode production && cp -r ./view/* ./public/ && cp -r ./data ./public/ && mv public build"
     },
     "devDependencies": {
         "@babel/core": "^7.15.4",
