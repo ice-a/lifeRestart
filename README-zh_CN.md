@@ -14,38 +14,22 @@
 <summary><strong>网页版</strong></summary>
 <br />
 
-1. 下载项目代码。
-
 ```bash
+# 1. 下载项目代码
 git clone https://github.com/VickScarlet/lifeRestart.git my-project
+
+# 2. 进入目录安装依赖
 cd my-project
+pnpm install
+
+# 3. 转换XLSX表
+pnpm xlsx2json
+
+# 4. 启动本地开发服务器
+pnpm dev
 ```
 
-2. 进入目录安装依赖。
-
-```bash
-yarn install
-```
-
-或者
-
-```bash
-npm install
-```
-
-3. 启动本地服务器。
-
-```bash
-yarn dev
-```
-
-或者
-
-```bash
-npm run dev
-```
-
-4. 启动完成后会自动打开浏览器访问 [http://localhost:8081/view/index.html](http://localhost:8081/view/index.html)。
+启动完成后打开浏览器访问 [http://localhost:5173](http://localhost:5173)。
 
 </details>
 
